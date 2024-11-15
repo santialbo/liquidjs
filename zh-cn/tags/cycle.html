@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<head prefix="og: http://ogp.me/ns#">
+<head prefix="og: https://ogp.me/ns#">
   <meta charset="utf-8">
   <title>cycle | LiquidJS</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LiquidJS is a simple, expressive and safe Shopify / Github Pages compatible template engine in pure JavaScript.">
+  <meta name="description" content="LiquidJS is a simple, expressive and safe Shopify / GitHub Pages compatible template engine in pure JavaScript.">
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
   <link rel="manifest" href="/zh-cn/manifest.json">
   <!-- Canonical links -->
@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="../../css/navy.css">
 
   <link rel="alternate" href="../../atom.xml" title="LiquidJS" type="application/atom+xml">
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
   <div id="container">
@@ -48,14 +48,14 @@
       <a href="/zh-cn/" id="logo">LiquidJS</a>
     </h1>
     <nav id="main-nav">
-      <a href="../tutorials/intro-to-liquid.html" class="main-nav-link">教程</a><a href="overview.html" class="main-nav-link">标签</a><a href="../filters/overview.html" class="main-nav-link">过滤器</a><a href="../playground.html" class="main-nav-link">演示</a><a href="../api/classes/liquid_.liquid.html" class="main-nav-link">API</a>
+      <a href="../tutorials/intro-to-liquid.html" class="main-nav-link">教程</a><a href="overview.html" class="main-nav-link">标签</a><a href="../filters/overview.html" class="main-nav-link">过滤器</a><a href="../playground.html" class="main-nav-link">演示</a><a href="../../api/classes/Liquid.html" class="main-nav-link">API</a>
       <div id="search-input-wrap">
         <i id="search-input-icon" class="icon-search"></i>
         <input type="search" id="search-input" placeholder="搜索...">
       </div>
     </nav>
-    <div id="lang-select-wrap" class="main-nav-link">
-      <label><i class="icon-network"></i>简体中文</label>
+    <div class="main-nav-link icon-nav-link">
+      <label><i class="icon-network"></i> <span class="icon-nav-title">简体中文</span></label>
       <select id="lang-select" data-canonical="tags/cycle.html">
         
           <option value="en">English</option>
@@ -64,8 +64,7 @@
         
       </select>
     </div>
-    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/harttle/liquidjs" id="github-link-wrap" class="main-nav-link"><i class="icon-github"></i>Github</a>
-    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://opencollective.com/liquidjs" class="main-nav-link"><i class="icon-opencollective"></i>Support</a>
+    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/harttle/liquidjs" class="main-nav-link icon-nav-link"><i class="icon-github"></i> <span class="icon-nav-title">GitHub</span></a>
     <a id="mobile-nav-toggle">
       <span class="mobile-nav-toggle-bar"></span>
       <span class="mobile-nav-toggle-bar"></span>
@@ -79,10 +78,10 @@
     <div id="content-inner">
       <aside id="sidebar" role="navigation">
   <div class="inner">
-    <a href="overview.html" class="sidebar-link">概述</a><a href="assign.html" class="sidebar-link">assign</a><a href="capture.html" class="sidebar-link">capture</a><a href="case.html" class="sidebar-link">case</a><a href="comment.html" class="sidebar-link">comment</a><a href="cycle.html" class="sidebar-link current">cycle</a><a href="decrement.html" class="sidebar-link">decrement</a><a href="echo.html" class="sidebar-link">echo</a><a href="for.html" class="sidebar-link">for</a><a href="if.html" class="sidebar-link">if</a><a href="include.html" class="sidebar-link">include</a><a href="increment.html" class="sidebar-link">increment</a><a href="layout.html" class="sidebar-link">layout</a><a href="liquid.html" class="sidebar-link">liquid</a><a href="raw.html" class="sidebar-link">raw</a><a href="render.html" class="sidebar-link">render</a><a href="tablerow.html" class="sidebar-link">tablerow</a><a href="unless.html" class="sidebar-link">unless</a>
+    <a href="overview.html" class="sidebar-link">概述</a><a href="inline_comment.html" class="sidebar-link">#</a><a href="assign.html" class="sidebar-link">assign</a><a href="capture.html" class="sidebar-link">capture</a><a href="case.html" class="sidebar-link">case</a><a href="comment.html" class="sidebar-link">comment</a><a href="cycle.html" class="sidebar-link current">cycle</a><a href="decrement.html" class="sidebar-link">decrement</a><a href="echo.html" class="sidebar-link">echo</a><a href="if.html" class="sidebar-link">else</a><a href="if.html" class="sidebar-link">elsif</a><a href="for.html" class="sidebar-link">for</a><a href="if.html" class="sidebar-link">if</a><a href="include.html" class="sidebar-link">include</a><a href="increment.html" class="sidebar-link">increment</a><a href="layout.html" class="sidebar-link">layout</a><a href="liquid.html" class="sidebar-link">liquid</a><a href="raw.html" class="sidebar-link">raw</a><a href="render.html" class="sidebar-link">render</a><a href="tablerow.html" class="sidebar-link">tablerow</a><a href="unless.html" class="sidebar-link">unless</a><a href="case.html" class="sidebar-link">when</a>
   </div>
 </aside>
-      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+      <article class="article-container" itemscope itemtype="https://schema.org/Article">
         <div class="article-inner">
           <div class="article">
             <div class="inner">
@@ -128,7 +127,7 @@ two<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2022-02-13T07:12:53.189Z" itemprop="dateModified">上次更新：2022-02-13</time>
+                <time class="article-footer-updated" datetime="2024-11-15T09:58:02.449Z" itemprop="dateModified">上次更新：2024-11-15</time>
                 <a href="comment.html" class="article-footer-prev" title="sidebar.tags.comment"><i class="icon-chevron-left"></i><span>上一页</span></a><a href="decrement.html" class="article-footer-next" title="sidebar.tags.decrement"><span>下一页</span><i class="icon-chevron-right"></i></a>
               </footer>
             </div>
@@ -151,12 +150,11 @@ two<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
     <footer id="footer" class="wrapper">
   <div class="inner">
     <div id="footer-copyright">
-      &copy; 2022 <a href="https://github.com/harttle/liquidjs/graphs/contributors" rel="external nofollow noreferrer" target="_blank">Harttle</a><br>
+      &copy; 2024 <a href="https://github.com/harttle/liquidjs/graphs/contributors" rel="external nofollow noreferrer" target="_blank">Harttle</a><br>
       本文档通过 <a href="http://creativecommons.org/licenses/by/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 授权。
     </div>
     <div id="footer-links">
       <a href="https://twitter.com/harttleharttle" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="icon-twitter"></i></a>
-      <a href="https://www.patreon.com/harttle" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="icon-patreon"></i></a>
       <a href="https://opencollective.com/liquidjs" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="icon-opencollective"></i></a>
       <a href="https://github.com/harttle/liquidjs" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="icon-github"></i></a>
     </div>
@@ -168,26 +166,27 @@ two<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
   <nav id="mobile-nav">
   <div id="mobile-nav-inner">
     <ul id="mobile-nav-list">
-      <a href="../tutorials/intro-to-liquid.html" class="mobile-nav-link">教程</a><a href="overview.html" class="mobile-nav-link">标签</a><a href="../filters/overview.html" class="mobile-nav-link">过滤器</a><a href="../playground.html" class="mobile-nav-link">演示</a><a href="../api/classes/liquid_.liquid.html" class="mobile-nav-link">API</a>
-      <li class="mobile-nav-item">
-        <a href="https://github.com/harttle/liquidjs" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
-      </li>
+      <a href="../tutorials/intro-to-liquid.html" class="mobile-nav-link">教程</a><a href="overview.html" class="mobile-nav-link">标签</a><a href="../filters/overview.html" class="mobile-nav-link">过滤器</a><a href="../playground.html" class="mobile-nav-link">演示</a><a href="../../api/classes/Liquid.html" class="mobile-nav-link">API</a>
     </ul>
     
     <div class="mobile-sidebar-list">
-      <a href="overview.html" class="mobile-nav-link">概述</a><a href="assign.html" class="mobile-nav-link">assign</a><a href="capture.html" class="mobile-nav-link">capture</a><a href="case.html" class="mobile-nav-link">case</a><a href="comment.html" class="mobile-nav-link">comment</a><a href="cycle.html" class="mobile-nav-link current">cycle</a><a href="decrement.html" class="mobile-nav-link">decrement</a><a href="echo.html" class="mobile-nav-link">echo</a><a href="for.html" class="mobile-nav-link">for</a><a href="if.html" class="mobile-nav-link">if</a><a href="include.html" class="mobile-nav-link">include</a><a href="increment.html" class="mobile-nav-link">increment</a><a href="layout.html" class="mobile-nav-link">layout</a><a href="liquid.html" class="mobile-nav-link">liquid</a><a href="raw.html" class="mobile-nav-link">raw</a><a href="render.html" class="mobile-nav-link">render</a><a href="tablerow.html" class="mobile-nav-link">tablerow</a><a href="unless.html" class="mobile-nav-link">unless</a>
+      <a href="overview.html" class="mobile-nav-link">概述</a><a href="inline_comment.html" class="mobile-nav-link">#</a><a href="assign.html" class="mobile-nav-link">assign</a><a href="capture.html" class="mobile-nav-link">capture</a><a href="case.html" class="mobile-nav-link">case</a><a href="comment.html" class="mobile-nav-link">comment</a><a href="cycle.html" class="mobile-nav-link current">cycle</a><a href="decrement.html" class="mobile-nav-link">decrement</a><a href="echo.html" class="mobile-nav-link">echo</a><a href="if.html" class="mobile-nav-link">else</a><a href="if.html" class="mobile-nav-link">elsif</a><a href="for.html" class="mobile-nav-link">for</a><a href="if.html" class="mobile-nav-link">if</a><a href="include.html" class="mobile-nav-link">include</a><a href="increment.html" class="mobile-nav-link">increment</a><a href="layout.html" class="mobile-nav-link">layout</a><a href="liquid.html" class="mobile-nav-link">liquid</a><a href="raw.html" class="mobile-nav-link">raw</a><a href="render.html" class="mobile-nav-link">render</a><a href="tablerow.html" class="mobile-nav-link">tablerow</a><a href="unless.html" class="mobile-nav-link">unless</a><a href="case.html" class="mobile-nav-link">when</a>
     </div>
     
   </div>
-  <div id="mobile-lang-select-wrap">
-    <span id="mobile-lang-select-label"><i class="icon-network"></i><span>简体中文</span></span>
-    <select id="mobile-lang-select" data-canonical="tags/cycle.html">
-      
-        <option value="en">English</option>
-      
-        <option value="zh-cn" selected>简体中文</option>
-      
-    </select>
+  <div id="mobile-button-list">
+    <a href="https://github.com/harttle/liquidjs" class="mobile-nav-link" rel="external" target="_blank"><i class="icon-github"></i></a>
+    <a href="https://opencollective.com/liquidjs" class="mobile-nav-link" rel="external" target="_blank"><i class="icon-opencollective"></i></a>
+    <div id="mobile-lang-select-wrap" class="mobile-nav-link">
+      <label for="mobile-lang-select"><i class="icon-network"></i></label>
+      <select id="mobile-lang-select" data-canonical="tags/cycle.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-cn" selected>简体中文</option>
+        
+      </select>
+    </div>
   </div>
 </nav>
   

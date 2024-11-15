@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head prefix="og: http://ogp.me/ns#">
+<head prefix="og: https://ogp.me/ns#">
   <meta charset="utf-8">
   <title>Tags | LiquidJS</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="../css/navy.css">
 
   <link rel="alternate" href="../atom.xml" title="LiquidJS" type="application/atom+xml">
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
   <div id="container">
@@ -48,14 +48,14 @@
       <a href="../index.html" id="logo">LiquidJS</a>
     </h1>
     <nav id="main-nav">
-      <a href="../tutorials/intro-to-liquid.html" class="main-nav-link">Tutorials</a><a href="../tags/overview.html" class="main-nav-link active">Tags</a><a href="../filters/overview.html" class="main-nav-link">Filters</a><a href="../playground.html" class="main-nav-link">Playground</a><a href="../api/classes/liquid_.liquid.html" class="main-nav-link">API</a>
+      <a href="../tutorials/intro-to-liquid.html" class="main-nav-link">Tutorials</a><a href="../tags/overview.html" class="main-nav-link active">Tags</a><a href="../filters/overview.html" class="main-nav-link">Filters</a><a href="../playground.html" class="main-nav-link">Playground</a><a href="../api/classes/Liquid.html" class="main-nav-link">API</a>
       <div id="search-input-wrap">
         <i id="search-input-icon" class="icon-search"></i>
         <input type="search" id="search-input" placeholder="Search...">
       </div>
     </nav>
-    <div id="lang-select-wrap" class="main-nav-link">
-      <label><i class="icon-network"></i>English</label>
+    <div class="main-nav-link icon-nav-link">
+      <label><i class="icon-network"></i> <span class="icon-nav-title">English</span></label>
       <select id="lang-select" data-canonical="tags/overview.html">
         
           <option value="en" selected>English</option>
@@ -64,8 +64,7 @@
         
       </select>
     </div>
-    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/harttle/liquidjs" id="github-link-wrap" class="main-nav-link"><i class="icon-github"></i>Github</a>
-    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://opencollective.com/liquidjs" class="main-nav-link"><i class="icon-opencollective"></i>Support</a>
+    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/harttle/liquidjs" class="main-nav-link icon-nav-link"><i class="icon-github"></i> <span class="icon-nav-title">GitHub</span></a>
     <a id="mobile-nav-toggle">
       <span class="mobile-nav-toggle-bar"></span>
       <span class="mobile-nav-toggle-bar"></span>
@@ -79,10 +78,10 @@
     <div id="content-inner">
       <aside id="sidebar" role="navigation">
   <div class="inner">
-    <a href="overview.html" class="sidebar-link current">Overview</a><a href="assign.html" class="sidebar-link">assign</a><a href="capture.html" class="sidebar-link">capture</a><a href="case.html" class="sidebar-link">case</a><a href="comment.html" class="sidebar-link">comment</a><a href="cycle.html" class="sidebar-link">cycle</a><a href="decrement.html" class="sidebar-link">decrement</a><a href="echo.html" class="sidebar-link">echo</a><a href="for.html" class="sidebar-link">for</a><a href="if.html" class="sidebar-link">if</a><a href="include.html" class="sidebar-link">include</a><a href="increment.html" class="sidebar-link">increment</a><a href="layout.html" class="sidebar-link">layout</a><a href="liquid.html" class="sidebar-link">liquid</a><a href="raw.html" class="sidebar-link">raw</a><a href="render.html" class="sidebar-link">render</a><a href="tablerow.html" class="sidebar-link">tablerow</a><a href="unless.html" class="sidebar-link">unless</a>
+    <a href="overview.html" class="sidebar-link current">Overview</a><a href="inline_comment.html" class="sidebar-link">#</a><a href="assign.html" class="sidebar-link">assign</a><a href="capture.html" class="sidebar-link">capture</a><a href="case.html" class="sidebar-link">case</a><a href="comment.html" class="sidebar-link">comment</a><a href="cycle.html" class="sidebar-link">cycle</a><a href="decrement.html" class="sidebar-link">decrement</a><a href="echo.html" class="sidebar-link">echo</a><a href="if.html" class="sidebar-link">else</a><a href="if.html" class="sidebar-link">elsif</a><a href="for.html" class="sidebar-link">for</a><a href="if.html" class="sidebar-link">if</a><a href="include.html" class="sidebar-link">include</a><a href="increment.html" class="sidebar-link">increment</a><a href="layout.html" class="sidebar-link">layout</a><a href="liquid.html" class="sidebar-link">liquid</a><a href="raw.html" class="sidebar-link">raw</a><a href="render.html" class="sidebar-link">render</a><a href="tablerow.html" class="sidebar-link">tablerow</a><a href="unless.html" class="sidebar-link">unless</a><a href="case.html" class="sidebar-link">when</a>
   </div>
 </aside>
-      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+      <article class="article-container" itemscope itemtype="https://schema.org/Article">
         <div class="article-inner">
           <div class="article">
             <div class="inner">
@@ -93,7 +92,7 @@
                 
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>LiquidJS implements business-logic independent tags that are typically implemented in <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Shopify/liquid">shopify/liquid</a>. This section contains the specification and demoes for all the tags implemented by LiquidJS.</p>
+                <p>LiquidJS implements business-logic independent tags that are typically implemented in <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Shopify/liquid">shopify/liquid</a>. This section contains the specification and demos for all the tags implemented by LiquidJS.</p>
 <p>There’re a dozen of tags supported by LiquidJS, with all tags in <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Shopify/liquid">shopify/liquid</a>. These tags can be categorized into these groups:</p>
 <table>
 <thead>
@@ -116,7 +115,7 @@
 <tr>
 <td>Variable</td>
 <td>define and alter variables</td>
-<td>assign, increment, decrement</td>
+<td>assign, increment, decrement, capture, echo</td>
 </tr>
 <tr>
 <td>File</td>
@@ -126,14 +125,14 @@
 <tr>
 <td>Language</td>
 <td>temporarily disable LiquidJS syntax</td>
-<td>raw, comment</td>
+<td># (inline comment), raw, comment, liquid</td>
 </tr>
 </tbody></table>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2022-02-13T07:12:53.189Z" itemprop="dateModified">Last updated: 2022-02-13</time>
-                <a href="assign.html" class="article-footer-next" title="sidebar.tags.assign"><span>Next</span><i class="icon-chevron-right"></i></a>
+                <time class="article-footer-updated" datetime="2024-11-15T09:58:02.445Z" itemprop="dateModified">Last updated: 2024-11-15</time>
+                <a href="inline_comment.html" class="article-footer-next" title="sidebar.tags.#"><span>Next</span><i class="icon-chevron-right"></i></a>
               </footer>
             </div>
           </div>
@@ -155,12 +154,11 @@
     <footer id="footer" class="wrapper">
   <div class="inner">
     <div id="footer-copyright">
-      &copy; 2022 <a href="https://github.com/harttle/liquidjs/graphs/contributors" rel="external nofollow noreferrer" target="_blank">Harttle</a><br>
-      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>.
+      &copy; 2024 <a href="https://github.com/harttle/liquidjs/graphs/contributors" rel="external nofollow noreferrer" target="_blank">Harttle</a><br>
+      Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>.
     </div>
     <div id="footer-links">
       <a href="https://twitter.com/harttleharttle" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="icon-twitter"></i></a>
-      <a href="https://www.patreon.com/harttle" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="icon-patreon"></i></a>
       <a href="https://opencollective.com/liquidjs" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="icon-opencollective"></i></a>
       <a href="https://github.com/harttle/liquidjs" rel="external nofollow noreferrer" class="footer-link" target="_blank"><i class="icon-github"></i></a>
     </div>
@@ -172,26 +170,27 @@
   <nav id="mobile-nav">
   <div id="mobile-nav-inner">
     <ul id="mobile-nav-list">
-      <a href="../tutorials/intro-to-liquid.html" class="mobile-nav-link">Tutorials</a><a href="../tags/overview.html" class="mobile-nav-link active">Tags</a><a href="../filters/overview.html" class="mobile-nav-link">Filters</a><a href="../playground.html" class="mobile-nav-link">Playground</a><a href="../api/classes/liquid_.liquid.html" class="mobile-nav-link">API</a>
-      <li class="mobile-nav-item">
-        <a href="https://github.com/harttle/liquidjs" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
-      </li>
+      <a href="../tutorials/intro-to-liquid.html" class="mobile-nav-link">Tutorials</a><a href="../tags/overview.html" class="mobile-nav-link active">Tags</a><a href="../filters/overview.html" class="mobile-nav-link">Filters</a><a href="../playground.html" class="mobile-nav-link">Playground</a><a href="../api/classes/Liquid.html" class="mobile-nav-link">API</a>
     </ul>
     
     <div class="mobile-sidebar-list">
-      <a href="overview.html" class="mobile-nav-link current">Overview</a><a href="assign.html" class="mobile-nav-link">assign</a><a href="capture.html" class="mobile-nav-link">capture</a><a href="case.html" class="mobile-nav-link">case</a><a href="comment.html" class="mobile-nav-link">comment</a><a href="cycle.html" class="mobile-nav-link">cycle</a><a href="decrement.html" class="mobile-nav-link">decrement</a><a href="echo.html" class="mobile-nav-link">echo</a><a href="for.html" class="mobile-nav-link">for</a><a href="if.html" class="mobile-nav-link">if</a><a href="include.html" class="mobile-nav-link">include</a><a href="increment.html" class="mobile-nav-link">increment</a><a href="layout.html" class="mobile-nav-link">layout</a><a href="liquid.html" class="mobile-nav-link">liquid</a><a href="raw.html" class="mobile-nav-link">raw</a><a href="render.html" class="mobile-nav-link">render</a><a href="tablerow.html" class="mobile-nav-link">tablerow</a><a href="unless.html" class="mobile-nav-link">unless</a>
+      <a href="overview.html" class="mobile-nav-link current">Overview</a><a href="inline_comment.html" class="mobile-nav-link">#</a><a href="assign.html" class="mobile-nav-link">assign</a><a href="capture.html" class="mobile-nav-link">capture</a><a href="case.html" class="mobile-nav-link">case</a><a href="comment.html" class="mobile-nav-link">comment</a><a href="cycle.html" class="mobile-nav-link">cycle</a><a href="decrement.html" class="mobile-nav-link">decrement</a><a href="echo.html" class="mobile-nav-link">echo</a><a href="if.html" class="mobile-nav-link">else</a><a href="if.html" class="mobile-nav-link">elsif</a><a href="for.html" class="mobile-nav-link">for</a><a href="if.html" class="mobile-nav-link">if</a><a href="include.html" class="mobile-nav-link">include</a><a href="increment.html" class="mobile-nav-link">increment</a><a href="layout.html" class="mobile-nav-link">layout</a><a href="liquid.html" class="mobile-nav-link">liquid</a><a href="raw.html" class="mobile-nav-link">raw</a><a href="render.html" class="mobile-nav-link">render</a><a href="tablerow.html" class="mobile-nav-link">tablerow</a><a href="unless.html" class="mobile-nav-link">unless</a><a href="case.html" class="mobile-nav-link">when</a>
     </div>
     
   </div>
-  <div id="mobile-lang-select-wrap">
-    <span id="mobile-lang-select-label"><i class="icon-network"></i><span>English</span></span>
-    <select id="mobile-lang-select" data-canonical="tags/overview.html">
-      
-        <option value="en" selected>English</option>
-      
-        <option value="zh-cn">简体中文</option>
-      
-    </select>
+  <div id="mobile-button-list">
+    <a href="https://github.com/harttle/liquidjs" class="mobile-nav-link" rel="external" target="_blank"><i class="icon-github"></i></a>
+    <a href="https://opencollective.com/liquidjs" class="mobile-nav-link" rel="external" target="_blank"><i class="icon-opencollective"></i></a>
+    <div id="mobile-lang-select-wrap" class="mobile-nav-link">
+      <label for="mobile-lang-select"><i class="icon-network"></i></label>
+      <select id="mobile-lang-select" data-canonical="tags/overview.html">
+        
+          <option value="en" selected>English</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+      </select>
+    </div>
   </div>
 </nav>
   
